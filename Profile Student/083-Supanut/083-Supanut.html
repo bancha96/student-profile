@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supanut</title>
+    <style>
+    .borderimage{
+    border:1px solid white;
+    }
+    </style>
+    <script language="JavaScript1.2">
+
+    function borderit(which,color){
+    //if IE 4+ or NS 6+
+    if (document.all||document.getElementById){
+    which.style.borderColor=color
+    }
+    }
+    </script>
+    <SCRIPT LANGUAGE="Javascript">
+       <!-- Start hiding
+       var COLOR = 999999
+       var woot = 0
+       function stoploop() {
+         document.bgColor = '#FFFFFF';
+         clearTimeout(loopID);
+       }
+       function loopBackground() {
+         if (COLOR > 0) {
+          document.bgColor = '#' + COLOR
+          COLOR -= 111111
+          loopID = setTimeout("loopBackground()",1)
+         } else {
+           document.bgColor = '#000000'
+           woot += 10
+           COLOR = 999999
+           COLOR -= woot
+       //    alert(COLOR)
+       //    clearTimeout(loopID)
+           loopID = setTimeout("loopBackground()",1)
+         }
+       }
+       // -->
+    </SCRIPT>
+</head>
+<style>
+    img{
+        width: 15%;
+        height: 25%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .B{
+        text-align: center;
+    }
+</style>
+<body>
+    <body onLoad="changeIt();" onClick="moveIt();">
+    <div class="B">
+        <h1>63030083</h1>
+        <p>ชื่อ-นามสกุล : นายศุภณัฐ ปัดถาวโร</p>
+    </div>
+    <CENTER>
+    <FORM NAME="background">
+    <INPUT TYPE="button" VALUE="เริ่ม"
+    onClick="loopBackground()">
+    <br>
+    <input type="button" value="หยุด" onClick="stoploop()">
+    </center>
+    </FORM>
+    <img src="https://scontent.fbkk4-4.fna.fbcdn.net/v/t1.6435-9/131424592_3488124014603704_5151740730833121851_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=09cbfe&_nc_eui2=AeFBT9jnWsL21rB1a1tWnr8hoZl2kEpNNMehmXaQSk00x4TE9zN6x5z_MuIVQUBf6aeQgFj8D7PJNWXN7sGPzbgM&_nc_ohc=ymIFPGU9PKUAX-tF78v&_nc_ht=scontent.fbkk4-4.fna&oh=41817e4575cef8e59b6a9573de5a0bae&oe=61936F68" class="borderimage" onMouseover="borderit(this,'Pink')" onMouseout="borderit(this,'Black')">
+</body>
+</html>
